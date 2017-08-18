@@ -1,0 +1,74 @@
+.message-body{
+    display: flex;
+    flex-direction: row;
+}
+
+.message-body.message-box-right{
+    flex-direction: row-reverse;
+}
+
+.foto{
+    border: 2px solid silver;
+    height: 45px;
+    width: 45px;
+    border-radius: 100%;
+    margin: auto;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 47px;
+    min-width: 47px;
+    max-width: 47px;
+    display: flex;
+    overflow: hidden;
+}
+
+.foto img{
+    width: 100%;
+}
+
+.message-box{
+    flex-grow: 3;
+    flex-shrink: 1;
+    margin: 5px;
+    padding: 5px 10px;
+    position: relative;
+    overflow: hidden;
+}
+.message-box-left .message-box{
+    border: 3px solid silver;
+    border-radius: 0 25px 25px 25px;
+    margin-right: 25px;
+}
+.message-box-right .message-box{
+    border: 3px solid silver;
+    border-radius: 25px 0 25px 25px;
+    margin-left: 25px;
+}
+.message-text{
+    font-size: 16px;
+}
+.message-date{
+    font-size: 10px;
+    color: silver;
+    position: absolute;
+    right: 15px;
+    bottom: 5px;
+}
+.send .message-box{
+    color: silver;
+    position: relative;
+}
+md-spinner{
+    display: none;
+}
+
+.send md-spinner{
+    display: block;
+}
+.spinner-send{
+    position: absolute;
+    top: 5%;
+    left: 35%;
+    color: black;
+    height: 40px;
+}
